@@ -528,7 +528,7 @@ section {
 .reviews-bg { background: var(--bg); }
 .reviews-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 48px;
 }
@@ -718,6 +718,72 @@ section {
 }
 .faq-item.open .faq-icon { transform: rotate(45deg); }
 
+/* ── ABOUT ── */
+.about-bg { background: var(--surface); }
+.about-card {
+  max-width: 860px;
+  margin: 56px auto 0;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.about-photo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.about-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--border);
+  box-shadow: 0 8px 32px rgba(47,65,87,0.12);
+}
+.about-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy2);
+  text-align: center;
+}
+.about-role {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.about-text {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.about-text p { margin-bottom: 14px; }
+.about-text p:last-child { margin-bottom: 0; }
+.about-text strong { color: var(--navy2); font-weight: 600; }
+.about-quote {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--green);
+  background: var(--green-bg);
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--green);
+  font-weight: 500;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .about-card {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+  .about-quote { text-align: left; }
+}
+
 /* ── FOOTER ── */
 footer {
   background: var(--navy2);
@@ -810,6 +876,7 @@ footer {
     <li><a href="#features">Features</a></li>
     <li><a href="#how-it-works">How It Works</a></li>
     <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="https://matchtrackerpro.etsy.com/listing/4507952498" target="_blank" class="nav-cta">Get It Now — $14.99</a></li>
   </ul>
@@ -1110,6 +1177,40 @@ footer {
           </div>
         </div>
       </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Great app! It has a great user interface with easy set up. I play on several teams out of my neighborhood, and I love the ability to track my performance and see different stats between Men's and mixed. The set up instructions were easy to follow. If you have any questions, Dave is also very helpful with assisting during the set up process. I would highly recommend to anyone who wants to keep up with their progress on the courts!"</p>
+        <div class="review-author">
+          <div class="review-avatar">D</div>
+          <div>
+            <div class="review-name">Darrell</div>
+            <div class="review-detail">Verified Etsy Buyer · June 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about-bg" id="about">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <div class="section-eyebrow">Built by a rec player, for rec players</div>
+      <h2 class="section-title">The person behind <span>the app</span></h2>
+    </div>
+    <div class="about-card">
+      <div class="about-photo-wrap reveal-left">
+        <img src="cropped_circle_image.png" alt="Dave, creator of Match Tracker Pro" class="about-photo" />
+        <div class="about-name">Dave</div>
+        <div class="about-role">Creator · Match Tracker Pro</div>
+      </div>
+      <div class="reveal-right">
+        <div class="about-text">
+          <p>I grew up in Houston and picked up tennis in my early teens, then life happened. After retiring from most other recreational sports and settling down in the Atlanta suburbs, I spotted my neighborhood team playing one day and remembered exactly how much fun the game was, so I jumped back in.</p>
+          <p>A couple years later I was playing in multiple leagues at once and my scores were scattered across different websites, apps, and my own memory. I wanted to know how I was actually performing in a given season, with specific partners, in pressure situations, etc. but every tool I found was built for high-level players or coaches, not for someone like me.</p>
+          <p>So I built Match Tracker Pro. Not as a product at firstk just something I wanted for myself. A clean way for recreational players to finally see what their numbers mean to their game. If you play in local leagues and have ever wanted to know your actual stats without a spreadsheet degree, this was made for you.</p>
+        </div>
+        
+      </div>
     </div>
   </div>
 </section>
@@ -1153,7 +1254,7 @@ footer {
     <div class="faq-list reveal">
       <div class="faq-item">
         <button class="faq-q">Is this just another spreadsheet with a pretty face? <span class="faq-icon">+</span></button>
-        <div class="faq-a">No. Match Tracker Pro is a full web app that reads and writes your Google Sheet silently in the background. You interact entirely through the app — you never open the sheet to use it. The sheet is just your private database.</div>
+        <div class="faq-a">No. Match Tracker Pro is a full web app that reads and writes your Google Sheet silently in the background. You interact entirely through the app — you never open the sheet to use it. The Sheet is just your private database.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Is there a subscription or any recurring fees? <span class="faq-icon">+</span></button>
@@ -1191,6 +1292,7 @@ footer {
     <a href="https://matchtrackerpro.etsy.com/listing/4507952498" target="_blank">Buy on Etsy</a>
     <a href="#features">Features</a>
     <a href="#how-it-works">How It Works</a>
+    <a href="#about">About</a>
     <a href="#faq">FAQ</a>
     <a href="mailto:TennisPerformanceTracker@gmail.com">Contact</a>
   </div>
