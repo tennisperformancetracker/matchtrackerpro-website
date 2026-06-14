@@ -667,6 +667,42 @@ section {
   margin-top: 16px;
 }
 
+/* ── SALE PRICING ── */
+.price-was {
+  text-decoration: line-through;
+  opacity: 0.45;
+  font-size: 0.65em;
+  font-weight: 600;
+  letter-spacing: 0;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.sale-badge {
+  display: inline-block;
+  background: #c0392b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-left: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+.nav-price-was {
+  text-decoration: line-through;
+  opacity: 0.5;
+  margin-right: 3px;
+  font-weight: 400;
+}
+.dark-card-price-was {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
 /* ── FAQ ── */
 .faq-bg { background: var(--bg); }
 .faq-list {
@@ -880,7 +916,7 @@ footer {
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="https://matchtrackerpro.etsy.com/listing/4507952498" target="_blank" class="nav-cta">Get It Now — $14.99</a></li>
+    <li><a href="https://matchtrackerpro.etsy.com/listing/4507952498" target="_blank" class="nav-cta">Get It Now — <span class="nav-price-was">$14.99</span> $7.49</a></li>
   </ul>
 </nav>
 
@@ -890,7 +926,7 @@ footer {
   <h1 class="reveal">Know Your <span>Game.</span><br>Own Your Stats.</h1>
   <p class="hero-sub reveal">Log every match, uncover your patterns, and play smarter tennis — right from your phone, courtside.</p>
   <div class="hero-actions reveal">
-    <a href="https://matchtrackerpro.etsy.com/listing/4507952498" target="_blank" class="btn-primary">Get Match Tracker Pro — $14.99</a>
+    <a href="https://matchtrackerpro.etsy.com/listing/4507952498" target="_blank" class="btn-primary">Get Match Tracker Pro — <span class="nav-price-was">$14.99</span> $7.49</a>
     <a href="#features" class="btn-ghost">See all features ↓</a>
   </div>
   <div class="hero-proof reveal">
@@ -1089,7 +1125,7 @@ footer {
       <div class="dark-card reveal">
         <div class="dark-card-icon">💳</div>
         <div class="dark-card-title">Pay once. Use forever.</div>
-        <div class="dark-card-desc">$14.99. One time. No monthly fees, no paywalls, no locked features. Set it up once and every season after that is free.</div>
+        <div class="dark-card-desc"><span class="dark-card-price-was">$14.99</span> $7.49. One time. No monthly fees, no paywalls, no locked features. Set it up once and every season after that is free.</div>
         <div class="dark-card-tag">One-Time Purchase</div>
       </div>
       <div class="dark-card reveal">
@@ -1227,7 +1263,7 @@ footer {
     <div class="pricing-card reveal">
       <div class="pricing-badge">One-Time Purchase</div>
       <div class="pricing-name">Match Tracker Pro</div>
-      <div class="pricing-price"><sup>$</sup>14.99</div>
+      <div class="pricing-price"><span class="price-was">$14.99</span>$7.49<span class="sale-badge">50% off</span></div>
       <div class="pricing-once">Pay once. Use every season. No subscriptions, ever.</div>
       <ul class="pricing-features">
         <li><div class="pricing-check">✓</div> Full web + mobile app for match entry and stats</li>
@@ -1260,7 +1296,7 @@ footer {
       </div>
       <div class="faq-item">
         <button class="faq-q">Is there a subscription or any recurring fees? <span class="faq-icon">+</span></button>
-        <div class="faq-a">No. Match Tracker Pro is a one-time purchase for $14.99. No monthly fees, no paywalls, no locked features. Ever. Every feature update we ship is included at no extra cost.</div>
+        <div class="faq-a">No. Match Tracker Pro is a one-time purchase — <span class="dark-card-price-was">$14.99</span> $7.49 right now. No monthly fees, no paywalls, no locked features. Ever. Every feature update we ship is included at no extra cost.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Do I need to know how to use Google Sheets? <span class="faq-icon">+</span></button>
